@@ -31,10 +31,10 @@ const Home = () => {
               <CutoutText>Hi! <span role="img" aria-label="presentation">👋</span></CutoutText>
               <CutoutText>
                 I'm a brazilian software engineer looking for amazing opportunities to
-                improve my coding skills, building funny and useful solutions.
+                improve my development skills, building funny and useful solutions.
               </CutoutText>
               <CutoutText>
-                I love to study software architecture and new technologies. My main programming
+                I love studying software architecture and new technologies. My main programming
                 language is JavaScript (Node.js, React.js), but I also work with Golang, Kubernetes,
                 Docker and some other awesome tools.
               </CutoutText>
