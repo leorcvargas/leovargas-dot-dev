@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Anchor,
   Fieldset,
   WindowHeader,
   WindowContent,
@@ -21,7 +22,7 @@ const Home = () => {
         <span>leo.exe</span>
       </WindowHeader>
       <WindowContent>
-        <Fieldset label="Leo Vargas | Software Engineer">
+        <Fieldset label="Léo Vargas">
           <PresentationWrapper>
             <ProfilePicWrapper>
               <Image />
@@ -29,12 +30,19 @@ const Home = () => {
             <StyledCutout>
               <CutoutText>Hi! <span role="img" aria-label="presentation">👋</span></CutoutText>
               <CutoutText>
-                I'm a brazilian guy looking for amazing opportunities to improve my coding skills
+                I'm a brazilian software engineer looking for amazing opportunities to improve my coding skills
                 building funny and useful solutions.
               </CutoutText>
               <CutoutText>
                 I love to study software architecture and new technologies. Those are some tools
-                I work and have fun with: Node.js, React.js, Golang, Kubernetes, Docker and more!
+                I work and have fun with: Node.js, React.js, Golang, Kubernetes, Docker and more.
+              </CutoutText>
+              <CutoutText>
+                You can see more things about me here:
+              </CutoutText>
+              <CutoutText>
+                <Anchor href="" target="_blank">GitHub</Anchor>{' '}
+                <Anchor href="" target="_blank">LinkedIn</Anchor>
               </CutoutText>
             </StyledCutout>
           </PresentationWrapper>
