@@ -42,8 +42,8 @@ const Home = () => {
                 You can see more things about me here:
               </CutoutText>
               <CutoutText>
-                <Anchor href="" target="_blank">GitHub</Anchor>{' '}
-                <Anchor href="" target="_blank">LinkedIn</Anchor>
+                <Anchor href="https://github.com/leorcvargas" target="_blank">GitHub</Anchor>{' '}
+                <Anchor href="https://www.linkedin.com/in/leonardo-vargas-6a2216116/" target="_blank">LinkedIn</Anchor>
               </CutoutText>
             </StyledCutout>
           </PresentationWrapper>
