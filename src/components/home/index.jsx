@@ -28,14 +28,13 @@ const Home = () => {
               <Image />
             </ProfilePicWrapper>
             <StyledCutout>
-              <CutoutText>Hi! <span role="img" aria-label="presentation">👋</span></CutoutText>
+              <CutoutText>Hi, Leo here! <span role="img" aria-label="presentation">👋</span></CutoutText>
               <CutoutText>
-                I'm a brazilian software engineer looking for amazing opportunities to
-                improve my development skills, building funny and useful solutions.
+                I'm a software engineer who loves to build amazing and
+                well designed applications.
               </CutoutText>
               <CutoutText>
-                I love studying software architecture and new technologies. My main programming
-                language is JavaScript (Node.js, React.js), but I also work with Golang, Kubernetes,
+                I work with the JavaScript ecosystem, Golang, Kubernetes,
                 Docker and some other awesome tools.
               </CutoutText>
               <CutoutText>
