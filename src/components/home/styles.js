@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Cutout, Window } from 'react95';
+import { Button, Cutout, Window } from 'react95';
 
 export const StyledWindow = styled(Window)`
   margin: auto;
@@ -39,4 +39,8 @@ export const StyledCutout = styled(Cutout)`
 
 export const CutoutText = styled.p`
   margin: 8px 0px;
+`;
+
+export const PointerButton = styled(Button)`
+  cursor: pointer;
 `;

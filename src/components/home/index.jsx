@@ -4,11 +4,13 @@ import {
   Fieldset,
   WindowHeader,
   WindowContent,
+  Toolbar,
 } from 'react95';
 
 import {
   CutoutText,
   StyledWindow,
+  PointerButton,
   ProfilePicWrapper,
   PresentationWrapper,
   StyledCutout,
@@ -16,11 +18,36 @@ import {
 import Image from '../image';
 
 const Home = () => {
+  const links = [
+    {
+      url: 'https://github.com/leorcvargas',
+      title: 'GitHub',
+    },
+    {
+      url: 'https://www.linkedin.com/in/leonardo-vargas-6a2216116/',
+      title: 'LinkedIn',
+    },
+  ];
+
   return (
     <StyledWindow>
       <WindowHeader>
         <span>leo.exe</span>
       </WindowHeader>
+      <Toolbar>
+        {links.map((link, i) => (
+          <a
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={i}
+          >
+            <PointerButton variant="menu" size="sm">
+              {link.title}
+            </PointerButton>
+          </a>
+        ))}
+      </Toolbar>
       <WindowContent>
         <Fieldset label="Léo Vargas">
           <PresentationWrapper>
@@ -28,7 +55,10 @@ const Home = () => {
               <Image />
             </ProfilePicWrapper>
             <StyledCutout>
-              <CutoutText>Hi, Leo here! <span role="img" aria-label="presentation">👋</span></CutoutText>
+              <CutoutText>
+                <span>Hi, Leo here!</span>{' '}
+                <span role="img" aria-label="presentation">👋</span>
+              </CutoutText>
               <CutoutText>
                 I'm a software engineer who loves to build amazing and
                 well designed applications.
@@ -41,14 +71,23 @@ const Home = () => {
                 You can see more things about me here:
               </CutoutText>
               <CutoutText>
-                <Anchor href="https://github.com/leorcvargas" target="_blank">GitHub</Anchor>{' '}
-                <Anchor href="https://www.linkedin.com/in/leonardo-vargas-6a2216116/" target="_blank">LinkedIn</Anchor>
+                {links.map((link, i) => (
+                  <span key={i}>
+                    <Anchor
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.title}
+                    </Anchor>{' '}
+                  </span>
+                ))}
               </CutoutText>
             </StyledCutout>
           </PresentationWrapper>
         </Fieldset>
       </WindowContent>
-    </StyledWindow>
+    </StyledWindow >
   );
 };
 
