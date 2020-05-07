@@ -20,12 +20,18 @@ import Image from '../image';
 const Home = () => {
   const links = [
     {
+      url: 'https://blog.leovargas.dev',
+      title: 'Blog',
+    },
+    {
       url: 'https://github.com/leorcvargas',
       title: 'GitHub',
+      target: '_blank',
     },
     {
       url: 'https://www.linkedin.com/in/leonardo-vargas-6a2216116/',
       title: 'LinkedIn',
+      target: '_blank',
     },
   ];
 
@@ -38,7 +44,7 @@ const Home = () => {
         {links.map((link, i) => (
           <a
             href={link.url}
-            target="_blank"
+            target={link.target}
             rel="noopener noreferrer"
             key={i}
           >
@@ -75,7 +81,7 @@ const Home = () => {
                   <span key={i}>
                     <Anchor
                       href={link.url}
-                      target="_blank"
+                      target={link.target}
                       rel="noopener noreferrer"
                     >
                       {link.title}
